@@ -1,10 +1,7 @@
 import React from 'react';
 import { StyleSheet, TouchableOpacity } from 'react-native';
-import { useTheme } from '../hooks/useTheme';
 import { Cell } from './Cell';
 export const Row = ({ id, title, onPress }) => {
-  const { colors } = useTheme();
-
   return (
     <TouchableOpacity onPress={onPress} style={styles.row}>
       <Cell value={id} />

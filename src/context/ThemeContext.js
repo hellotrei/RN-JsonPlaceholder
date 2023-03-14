@@ -3,8 +3,6 @@ import { Appearance, StatusBar } from 'react-native';
 import { themes } from '../styles/themes';
 
 const deviceMode = Appearance.getColorScheme() ?? 'light';
-console.log(`colorScheme: `, deviceMode);
-//backgroundColor: themes.light.colors.alt,
 
 export const ThemeContext = createContext({
   colors: themes[deviceMode].colors,

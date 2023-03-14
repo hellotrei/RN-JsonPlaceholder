@@ -20,7 +20,8 @@ export const Cell = ({ value, textStyle, style }) => {
 const styles = StyleSheet.create({
   cell: {
     flex: 1,
-    padding: 5,
+    paddingHorizontal: 5,
+    paddingVertical: 10,
     alignItems: 'flex-start',
     justifyContent: 'center',
   },

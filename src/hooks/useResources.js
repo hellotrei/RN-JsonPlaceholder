@@ -6,7 +6,6 @@ export const useResources = (path) => {
   useEffect(() => {
     try {
       (async (path) => {
-        console.log(`path: `, path);
         const response = await jsonPlaceholder.get(path);
         setResources(response.data);
       })(path);

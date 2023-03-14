@@ -19,11 +19,12 @@ export const Card = ({ children, style }) => {
 
 const styles = StyleSheet.create({
   card: {
-    flex: 1,
-    width: '90%',
-    marginTop: 20,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 40,
+    shadowColor: 'black',
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 6,
+    shadowOpacity: 0.26,
+    elevation: 8,
+    padding: 20,
+    borderRadius: 10
   },
 });

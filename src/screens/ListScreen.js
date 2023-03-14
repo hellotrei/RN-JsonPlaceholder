@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, FlatList } from 'react-native';
-import { Button, Container, Card, Row } from '../components';
+import { Container, Card, Row } from '../components';
 import { useResources } from '../hooks/useResources';
 
 export const ListScreen = ({ navigation }) => {

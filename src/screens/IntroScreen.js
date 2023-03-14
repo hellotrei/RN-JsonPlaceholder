@@ -1,11 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Button, Container } from '../components';
+import { useTheme } from '../hooks/useTheme';
 
 export const IntroScreen = ({ navigation }) => {
+  const { colors } = useTheme();
   return (
     <Container>
-      <Text style={styles.title}>Hi Welcome!</Text>
+      <Text style={{...styles.title, color: colors.text}}>Hi Welcome!</Text>
       <Button
         style={{ backgroundColor: '#4c5265', borderColor: '#212129' }}
         onPress={() => navigation.navigate('List')}
