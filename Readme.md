@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img src="../RN-JsonPlaceholder/assets/square-228x228.png" alt="Logo.png" width="140px" height="100px">
+  <img src="../assets/square-228x228.png" alt="Logo.png" width="140px" height="100px">
 </p>
 <h1 align="center">  RN-JsonPlaceholder Public </h1>
 <h3 align="center"> Task For Frontend Developer </h3>
