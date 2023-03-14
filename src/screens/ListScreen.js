@@ -1,18 +1,27 @@
 import React from 'react';
-import { StyleSheet, Text, FlatList } from 'react-native';
+import { FlatList } from 'react-native';
 import { Container, Card, Row } from '../components';
+import Empty from '../components/Empty';
+import Loading from '../components/Loading';
 import { useResources } from '../hooks/useResources';
 
 export const ListScreen = ({ navigation }) => {
-  const resources = useResources('posts');
-  console.log(`resources from List Screen : `, resources);
+  const { resources, isLoading } = useResources('posts');
+  
+  if (isLoading) {
+    return <Loading />;
+  }
+
+  if (resources.length === 0) {
+    return <Empty message="No data available" />;
+  }
+
   return (
     <Container>
       <Card>
         <FlatList
-          style={styles.list}
           data={resources}
-          keyExtractor={(item) => item.id}
+          keyExtractor={(item) => item.id.toString()}
           renderItem={({ item }) => (
             <Row
               id={item.id}
@@ -25,9 +34,3 @@ export const ListScreen = ({ navigation }) => {
     </Container>
   );
 };
-
-const styles = StyleSheet.create({
-  list: {
-    paddingTop: 30,
-  },
-});
