@@ -4,6 +4,12 @@
 <h1 align="center">  RN-JsonPlaceholder Public </h1>
 <h3 align="center"> Task For Frontend Developer </h3>
 
+<p align="center">
+  <img src="./assets/picture-1.png" alt="Picture 1" width="300px" />
+  <img src="./assets/picture-2.png" alt="Picture 2" width="300px" />
+  <img src="./assets/picture-3.png" alt="Picture 3" width="300px" />
+</p>
+
 <h2> :floppy_disk: Project Files Description</h2>
 
 <p>This Project includes 3 executable directories as follows:</p>
